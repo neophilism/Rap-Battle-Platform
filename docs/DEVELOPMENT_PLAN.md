@@ -1,3 +1,5 @@
+> **Canonical PR work plan:** [`registry/roadmap.json`](../registry/roadmap.json). The detailed historic instructions below remain authoritative for scope, while all current planned work/PR links must be updated in the canonical registry.
+
 # Rap Battle Platform — original twelve-milestone downstream development plan
 
 **Recovery provenance:** original October 7, 2026 conversation specifying this downstream application and its 12-PR roadmap. **All 12 original milestone names recovered.** The implementation/acceptance expansion here is technical guidance grounded in that conversation, not a purported verbatim transcript. Milestone numbers are not necessarily GitHub PR issue numbers.
