@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "repository": "neophilism/Rap-Battle-Platform",
+  "roadmapVersion": 1,
+  "planVerified": true,
+  "plannedPrCount": 12,
+  "observedAt": "2026-10-11T17:40:35.381Z",
+  "units": [
+    {
+      "id": "RAP-01",
+      "title": "Multi-tenant application shell",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-02",
+      "title": "White-label design",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-03",
+      "title": "Battle terminology",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-04",
+      "title": "Battle presets",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-05",
+      "title": "Artist profiles",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-06",
+      "title": "Creator economy",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-07",
+      "title": "Local league administration",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-08",
+      "title": "League discovery",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-09",
+      "title": "Rankings and records",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-10",
+      "title": "Revenue sharing",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-11",
+      "title": "Sponsorship package",
+      "origin": "original",
+      "prs": []
+    },
+    {
+      "id": "RAP-12",
+      "title": "Production validation",
+      "origin": "original",
+      "prs": []
+    }
+  ],
+  "pullRequests": []
+}
