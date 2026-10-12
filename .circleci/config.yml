@@ -1,0 +1,18 @@
+version: 2.1
+
+# Existing E2EESA record integrity only. This is NOT full product CI,
+# penetration testing, or security certification.
+jobs:
+  existing-status-integrity:
+    docker:
+      - image: cimg/python:3.12
+    resource_class: small
+    steps:
+      - checkout
+      - run:
+          name: Validate E2EESA scoped status and evidence
+          command: python3 scripts/validate_e2eesa_status.py
+workflows:
+  current-status-only:
+    jobs:
+      - existing-status-integrity
