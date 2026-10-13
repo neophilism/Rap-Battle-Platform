@@ -1,0 +1,22 @@
+name: Policy and source integrity (not product certification)
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source-integrity:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+      - name: Validate owner AI review policy
+        run: python3 -c "from pathlib import Path; s=Path('AGENTS.md').read_text(); assert 'Owner security-review policy' in s; assert 'Failed required tests' in s"
+      - name: Verify existing E2EESA status record
+        run: python3 scripts/validate_e2eesa_status.py
+      - name: Parse canonical PR and roadmap registries
+        run: python3 -c "import json; [json.load(open(p)) for p in ('registry/prs.json', 'registry/roadmap.json')]"
